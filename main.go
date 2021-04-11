@@ -1,15 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"time"
+	"github.com/aaron-trout/learn-golang/cmd"
 )
 
-func dayOfWeek() time.Weekday {
-	return time.Now().Weekday()
-}
-
 func main() {
-	day := dayOfWeek()
-	fmt.Printf("Happy %s!", day)
+	cmd.Execute()
 }
